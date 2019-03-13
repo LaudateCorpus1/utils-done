@@ -7,4 +7,6 @@ package com.avast.utils2
   */
 sealed trait Done
 
-case object Done extends Done
+case object Done extends Done {
+  def apply(): Done = this
+}
